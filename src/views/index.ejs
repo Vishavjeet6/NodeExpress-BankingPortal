@@ -3,6 +3,9 @@
     <h1><%= title %></h1>
     <a href="/profile">Profile</a>
 </div>
+<% for(let account of accounts){ %>
+    <%- include('summary', {account: account}) %>
+<% } %>
 <br>
 <a href="/transfer">Transfer</a>
 <%- include('footer') %>
