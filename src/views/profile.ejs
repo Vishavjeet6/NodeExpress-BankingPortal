@@ -1,14 +1,12 @@
 <%- include('header') %> 
 <h1>Profile</h1>
 <div class="div">
-    <% for(let u of user){ %>
-        <p><%= user.name %></p>
-        <p><%= user.username %></p>
-        <p><%= user.phone %></p>
-        <p><%= user.email %></p>
-        <p><%= user.address %></p>
-    <% } %>
+    <p><%= user.name %></p>
+    <p><%= user.username %></p>
+    <p><%= user.phone %></p>
+    <p><%= user.email %></p>
+    <p><%= user.address %></p>
 </div>
 <br>
-<a href="/account">Back to Account Summary</a>
+<a href='/'>Back to Account Summary</a>
 <%- include('footer') %>
